@@ -14,7 +14,7 @@ import type { ComposeService } from "./infra.js";
 export type EnvNames = Map<string, string[]>;
 
 export const isEnvExample = (path: string) =>
-  /(^|\/)(\.env\.(example|sample|template|dist)|[^/]+\.env\.(example|sample|template)|env\.(example|sample|template))$/.test(path);
+  /(^|\/)(\.env(?:\.[^/]+)*\.(example|sample|template|dist)|[^/]+\.env\.(example|sample|template)|env\.(example|sample|template))$/.test(path);
 
 const NAME = /^[A-Z][A-Z0-9_]{2,}$/;
 
