@@ -4,6 +4,7 @@ This repository is public. Anything committed here is published.
 
 - **Check every commit for secrets.** Before committing, review the staged diff (`git diff --cached`) for API keys and tokens (e.g. `sk-...`, `ghp_...`, `xox[bp]-...`, `AKIA...`), private keys (`-----BEGIN ... PRIVATE KEY-----`), passwords, connection strings with credentials, and `.env` contents. If anything looks like a real secret, do not commit: stop and tell the developer. Example values in tests and docs must be obviously fake (`sk-test-123`, `example-pass`).
 - **Local development material stays local.** `docs/` and `openspec/` are git-ignored: dogfooding logs, specs, and working notes. Never force-add them (`git add -f`), and never copy their content into tracked files. This applies especially to details about the private projects OpenAX is tested on.
+- **Use Conventional Commits.** Format commit messages according to the Conventional Commits specification.
 
 <!-- openax:start -->
 ## Architectural memory (OpenAX)
