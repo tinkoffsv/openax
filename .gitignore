@@ -152,3 +152,6 @@ openspec/
 
 # Local development material: dogfooding logs, working notes (never published)
 docs/
+
+# macOS
+.DS_Store
