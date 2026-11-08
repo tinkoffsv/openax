@@ -7,8 +7,14 @@ it("recognizes example env files only", () => {
   expect(isEnvExample(".env.example")).toBe(true);
   expect(isEnvExample("backend/.env.sample")).toBe(true);
   expect(isEnvExample("prod.env.example")).toBe(true);
+  expect(isEnvExample(".env.local.example")).toBe(true);
+  expect(isEnvExample("apps/web/.env.local.example")).toBe(true);
+  expect(isEnvExample(".env.development.sample")).toBe(true);
+  expect(isEnvExample(".env.production.template")).toBe(true);
   expect(isEnvExample(".env")).toBe(false);
   expect(isEnvExample(".env.production")).toBe(false);
+  expect(isEnvExample(".env.local")).toBe(false);
+  expect(isEnvExample(".env.development.local")).toBe(false);
 });
 
 it("keeps names and drops values from env files", () => {
