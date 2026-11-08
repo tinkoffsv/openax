@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0](https://github.com/tinkoffsv/openax/compare/v0.1.1...v0.2.0) (2026-11-08)
+
+
+### Features
+
+* agent-driven CLI with repository scan, observations, onboarding and why ([844551f](https://github.com/tinkoffsv/openax/commit/844551f05338fa09b7ffa7363a7c6c66f430decd))
+* agent-driven CLI with repository scan, observations, onboarding and why ([c660939](https://github.com/tinkoffsv/openax/commit/c660939161ce098b44ef525edb08092298af24ec))
+
+
+### Documentation
+
+* record 0.2 design decisions DEC-0005..DEC-0011 ([0e95e45](https://github.com/tinkoffsv/openax/commit/0e95e456f4c97234e9f3ee8fa4ca9ab99676730c))
+
 ## [0.1.1](https://github.com/tinkoffsv/Openax/compare/v0.1.0...v0.1.1) (2026-09-24)
 
 
